@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.button {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(254, 197, 3);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    font: 14px/1.5;
+}
+html, body {
+    height: 100%;
+}
+header {
+    position: relative;
+    min-height: 600px;
+    height: 100%;
+    background: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+header .logo {
+    color: rgb(254, 197, 3);
+    font-size: 32px;
+    float: left;
+}
+header .nav {
+    float: right;
+}
+header .nav>li {
+    float: left;
+}
+header .nav a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+    
+}
+header .nav a:hover {
+    background: rgb(254, 197, 3);
+}
+header .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+header .intro h1 {
+    font-size: 32px;
+}
+header .intro h2 {
+    font-size: 46px;
+    margin-top: 20px;
+}
+header .intro .button {
+    margin-top: 20px;
+}
+section {
+    margin-top: 30px;
+    text-align: center;
+}
+section>h2 {
+    font-size: 50px;
+}
+section>p {
+    font-size: 20px;
+}
+section > .famliy > li {
+    float: left;
+    width: 33.33%;
+    padding: 10px 20px;
+}
+section > ul .iconfont {
+    font-size: 50px;
+}
+section > ul p {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+section .picture figure {
+    width: calc(33.33% - 20px);
+    height: 280px;
+    margin: 10px;
+    float: left;
+}
+section .picture a {
+    display: block;
+    height: 220px;
+}
+section .picture img {
+    width: 100%;
+    height: 100%;
+}
+section .picture figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+section .picture p {
+    color: #666;
+    margin-top: 10px;
+}
+section .timeline > li{
+    position: relative;
+    margin-top: 50px;
+}
+section .timeline > li:nth-child(odd) {
+    padding-right: calc(50% - 50px);
+    text-align: right;
+}
+section .timeline img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+section .timeline li:nth-child(odd) dl {
+    margin-right: 110px;
+}
+section .timeline > li:nth-child(odd) img {
+    float: right;
+}
+section .timeline > li:nth-child(even) {
+    padding-left: calc(50% - 50px);
+    text-align: left;
+}
+section .timeline > li:nth-child(even) dl {
+    margin-left: 100px
+}
+section .timeline > li:nth-child(even) img {
+    float: left;
+}
+section .timeline dt {
+    font-size: 16px;
+    font-weight: bold;
+}
+section .timeline dd:nth-of-type(2) {
+    color: #666;
+}
+section .timeline > li::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: 0px;
+    display: inline-block;
+    height: 100px;
+    width: 2px;
+    background-color: lightblue;
+}
+section .timeline .img {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    padding-top: 10px;
+    background: orange;
+    font-size: 18px;
+}
+section .timeline > li:last-child::before {
+    height: 0px;
+}
+section .main3 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+section .main3 figcaption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section .main3 figure {
+    width: calc(33.33% - 20px);
+    height: 350px;
+    margin: 10px;
+    float: left;
+}
+section .main3 li {
+    float: left;
+    width: calc(33.33%);
+    padding: 10px;
+}
+section > .main3 .iconfont {
+    font-size: 50px;
+}
+section > .main3 .iconfont:hover {
+    color: orange;
+}
+section .main p {
+    font-size : 16px;
+}
+.logo2 {
+    height: 100px;
+}
+section .img li {
+    float: left;
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+.content {
+    height: 100%;
+    min-height: 800px;
+    background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539849197401&di=6279823a2ff7bbf53170bb3fd416e6fd&imgtype=0&src=http%3A%2F%2Fwww.jituwang.com%2Fuploads%2Fallimg%2F151116%2F258096-15111609413943.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content h2 {
+    margin: 30px;
+}
+.content p {
+    margin: 30px;
+} 
+.content .input,.textarea {
+    display: inline-block;
+    width: 300px;
+}
+.content .input input {
+    float: right;
+    padding: 20px;
+    margin: 20px;
+}
+.content .textarea textarea {
+    float: left;
+    margin: 20px;
+}
+button a {
+    display: inline-block;
+    padding: 10px;
+}
+.footer .last-p,.last-line,.last-icon {
+    width: 33.33%;
+    border: 1px solid red;
+    text-align: center;
+}
+footer {
+    padding: 25px 0;
+    text-align: center
+}
+.col-md-4 {
+    float: left;
+    width: 33.33%
+}
+footer .social-buttons li a{
+    float: left;
+    width: 33.33%
+}
+footer .copyright {
+    float: right;
+}
+footer .quicklinks li {
+    float: left;
+    padding-left: 5px;
+}
+footer .col-md-4 .social-buttons li {
+    font-size: 30px;
+}
+footer .iconfont {
+    font-size: 30px;
+}
